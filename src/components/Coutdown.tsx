@@ -74,7 +74,7 @@ export default function FlashSaleCard() {
           }}
         >
           <span role="img" aria-label="fire">🔥</span>
-          FLASH SALE BERAKHIR DALAM
+          PENAWARAN BERAKHIR DALAM
           <span role="img" aria-label="fire">🔥</span>
         </motion.div>
 
@@ -120,7 +120,7 @@ export default function FlashSaleCard() {
           transition={{ delay: 0.7, duration: 0.8 }}
           style={{ display: "flex", justifyContent: "center", gap: "25px", fontSize: "14px" }}
         >
-          <span><Dot color="red" /> Hanya tersisa 47 slot</span>
+          <span><Dot color="white" /> Hanya tersisa 47 slot</span>
           <span><Dot color="yellow" /> 253 orang sedang melihat</span>
         </motion.div>
       </motion.div>

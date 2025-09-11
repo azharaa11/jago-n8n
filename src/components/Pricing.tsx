@@ -186,14 +186,14 @@ export default function Pricing() {
           </div>
         </div>
         
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-2xl p-8 max-w-4xl mx-auto">
             <p className="text-xl font-bold opacity-90">
               ⚠️ PERINGATAN SERIUS:
             </p>
             <p>Setelah countdown selesai: Harga NAIK PERMANEN menjadi Rp 2.999.000 💸 & Semua bonus eksklusif HILANG SELAMANYA ❌</p>
           </div>
-        </div>
+        </div> */}
         <Countdown/>
       </div>
     </section>

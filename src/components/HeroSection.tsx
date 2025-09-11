@@ -157,7 +157,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Sparkles className="w-5 h-5 animate-pulse" />
-              <span className="font-semibold">PLATFORM AUTOMATION TERDEPAN</span>
+              <span className="font-semibold">MODUL PEMBELAJARAN TERLENGKAP</span>
             </motion.div>
             
             <motion.div
@@ -171,15 +171,15 @@ export default function HeroSection() {
                   Jago N8N
                 </span>
                 <span className="block text-white mt-4">
-                  Automation
+                Kursus 
                 </span>
-                <span className="block text-3xl lg:text-6xl text-gray-300 mt-2">
-                  Platform
+                <span className="block lg:text-6xl text-gray-300 mt-2">
+                Interaktif
                 </span>
               </h1>
               
               <p className="text-xl lg:text-xl text-gray-300 leading-relaxed max-w-2xl">
-               Hemat waktu dan tenaga, biarkan sistem otomatis membantu bisnis Anda berjalan lancar.
+               Modul lengkap dan terstruktur untuk menguasai N8N. Cocok untuk pemula maupun profesional yang ingin mempercepat bisnis dengan otomatisasi.
               </p>
             </motion.div>
             
@@ -197,9 +197,9 @@ export default function HeroSection() {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7, type: "spring" }}
                 >
-                  10K+
+                  1000+
                 </motion.div>
-                <div className="text-sm text-gray-400">Active Users</div>
+                <div className="text-sm text-gray-400">Peserta Belajar</div>
               </div>
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
                 <motion.div
@@ -208,9 +208,9 @@ export default function HeroSection() {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
                 >
-                  500+
+                  50+
                 </motion.div>
-                <div className="text-sm text-gray-400">Workflows</div>
+                <div className="text-sm text-gray-400">Modul</div>
               </div>
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
                 <motion.div
@@ -219,9 +219,9 @@ export default function HeroSection() {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
                 >
-                  99%
+                  95%
                 </motion.div>
-                <div className="text-sm text-gray-400">Success Rate</div>
+                <div className="text-sm text-gray-400">Peserta Puas</div>
               </div>
             </motion.div>
             
@@ -241,7 +241,7 @@ export default function HeroSection() {
                   className="bg-gradient-to-r from-[#00ff88] to-[#00cc6a] hover:from-[#00cc6a] hover:to-[#00aa55] text-black px-8 py-4 rounded-2xl text-lg font-semibold group transition-all duration-300 shadow-2xl shadow-[#00ff88]/25"
                 >
                   <Zap className="mr-3 w-5 h-5 group-hover:animate-bounce" />
-                  Mulai Automation
+                  Mulai Belajar
                   <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.div>
@@ -268,7 +268,7 @@ export default function HeroSection() {
     "
   >
     <PlayCircle className="mr-3 w-5 h-5 animate-pulse group-hover:animate-bounce" />
-    Demo Workflow
+    Preview Materi
   </Button>
 </motion.div>
 
@@ -434,7 +434,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <p className="text-gray-400 mb-8 text-lg">Terintegrasi dengan 300+ platform populer</p>
+          <p className="text-gray-400 mb-8 text-lg">Pelajari Integrasi dengan 300+ Platform Populer</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
             {[
               { name: 'Slack', icon: '💬', color: 'from-purple-500 to-pink-500' },
@@ -464,10 +464,10 @@ export default function HeroSection() {
                   </div>
                   
                   {/* Connection Status */}
-                  <div className="flex items-center justify-center gap-1 mt-2">
+                  {/* <div className="flex items-center justify-center gap-1 mt-2">
                     <div className="w-2 h-2 bg-[#00ff88] rounded-full animate-pulse"></div>
-                    <span className="text-xs text-gray-400 group-hover:text-gray-300">Connected</span>
-                  </div>
+                    <span className="text-xs text-gray-400 group-hover:text-gray-300"></span>
+                  </div> */}
                 </div>
               </motion.div>
             ))}
@@ -482,17 +482,17 @@ export default function HeroSection() {
           >
             <div className="flex items-center gap-2 text-gray-300">
               <div className="w-3 h-3 bg-[#00ff88] rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">300+ Platform</span>
+              <span className="text-sm font-medium">300+ Studi Kasus</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
             <div className="flex items-center gap-2 text-gray-300">
               <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse animation-delay-300"></div>
-              <span className="text-sm font-medium">Zero Setup Time</span>
+              <span className="text-sm font-medium">Belajar Tanpa Ribet</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
             <div className="flex items-center gap-2 text-gray-300">
               <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse animation-delay-500"></div>
-              <span className="text-sm font-medium">Real-time Sync</span>
+              <span className="text-sm font-medium">Praktik Langsung</span>
             </div>
             <div className="h-24"></div>
           </motion.div>

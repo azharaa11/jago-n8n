@@ -76,7 +76,7 @@ export default function TargetAudience() {
             <span className="block text-[#00ff88]">Bergabung?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Jago N8N dirancang khusus untuk profesional yang ingin naik level dengan automation
+            Jago N8N membantu siapa pun yang ingin belajar dan berkembang dengan automation
           </p>
         </div>
         

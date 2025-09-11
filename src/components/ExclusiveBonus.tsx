@@ -4,33 +4,33 @@ export default function ExclusiveBonus() {
   const bonuses = [
     {
       icon: BookOpen,
-      title: "30+ Ready-to-Use Templates",
-      value: "Rp 2.500.000",
-      description: "Template workflow siap pakai untuk berbagai industri dan use case"
+      title: "Template workflow siap pakai untuk berbagai industri dan use case",
+      value: "500+ Template Siap Pakai",
+      description: ""
     },
     {
       icon: Video,
-      title: "Private Masterclass Series",
-      value: "Rp 3.000.000", 
-      description: "Exclusive video series dengan advanced automation strategies"
+      title: "Exclusive video series dengan advanced automation strategies",
+      value: "Video Masterclass Premium", 
+      description: ""
     },
     {
       icon: Users,
-      title: "VIP Community Access",
-      value: "Rp 1.500.000",
-      description: "Akses komunitas VIP dengan networking automation professionals"
+      title: "Akses komunitas VIP dengan networking automation professionals",
+      value: "Akses Komunitas VIP",
+      description: ""
     },
     {
       icon: Zap,
-      title: "1-on-1 Consultation Call",
-      value: "Rp 2.000.000",
-      description: "Personal consultation untuk automation strategy bisnis kamu"
+      title: "Personal consultation untuk automation strategy bisnis kamu",
+      value: "Konsultasi 1-on-1",
+      description: ""
     },
     {
       icon: Star,
-      title: "Lifetime Updates",
-      value: "Rp 1.000.000",
-      description: "Akses selamanya ke semua update materi dan fitur baru"
+      title: "Akses selamanya ke semua update materi dan fitur baru",
+      value: "Update Materi Selamanya",
+      description: ""
     }
   ];
 
@@ -72,14 +72,13 @@ export default function ExclusiveBonus() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Bonus Senilai
             <span className="block text-[#00ff88]">
-              Rp {(totalValue / 1000000).toFixed(1)} Juta
+              Rp 10 Juta
             </span>
             <span className="text-2xl lg:text-3xl text-gray-300">GRATIS!</span>
           </h2>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Khusus untuk 100 pendaftar pertama, dapatkan bonus premium senilai puluhan juta rupiah!
-          </p>
+            Hanya untuk 100 orang pertama – bonus premium ini bisa kamu dapatkan tanpa biaya tambahan!         </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -120,7 +119,7 @@ export default function ExclusiveBonus() {
             <Gift className="w-20 h-20 mx-auto mb-6" />
             
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-              Total Bonus Senilai Rp {(totalValue / 1000000).toFixed(1)} Juta
+              Dapatkan Bonus Eksklusif Senilai Rp 10 Juta – 100% Gratis!
             </h3>
             
             <p className="text-xl mb-8 opacity-80">

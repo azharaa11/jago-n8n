@@ -5,25 +5,26 @@ import { Download, Star, BookOpen, Zap, Users, Trophy } from "lucide-react";
 export default function EbookSection() {
   const ebookFeatures = [
     {
-      icon: Zap,
-      title: "15 Real Case Studies",
-      description: "Workflow automation nyata dari berbagai industri"
-    },
-    {
-      icon: Users,
-      title: "Best Practices Guide",
-      description: "Tips dan trik dari automation experts"
-    },
-    {
-      icon: Trophy,
-      title: "Templates Library",
-      description: "20+ ready-to-use workflow templates"
-    },
-    {
-      icon: BookOpen,
-      title: "Step-by-Step Tutorial",
-      description: "Panduan lengkap dari basic sampai advanced"
-    }
+  icon: Zap,
+  title: "15+ Studi Kasus",
+  description: "Belajar automation nyata dari berbagai industri"
+},
+{
+  icon: Users,
+  title: "Best Practices",
+  description: "Tips dan trik langsung dari praktisi automation"
+},
+{
+  icon: Trophy,
+  title: "Video Praktik",
+  description: "20+ video praktik siap tonton dan dipraktikkan"
+},
+{
+  icon: BookOpen,
+  title: "Step-by-Step Video",
+  description: "Panduan lengkap mulai dari dasar hingga mahir"
+}
+
   ];
 
   return (
@@ -54,18 +55,17 @@ export default function EbookSection() {
                 <span className="font-semibold">BONUS EKSKLUSIF</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+              <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-[#00ff88] to-purple-400 bg-clip-text text-transparent">
-                  E-Book Premium
+                  Video Course Premium 
                 </span>
                 <span className="block text-white mt-2">
-                  "Panduan Lengkap N8N Automation"
+                  Panduan Lengkap N8N Automation
                 </span>
               </h2>
               
-              <p className="text-xl text-gray-300 leading-relaxed">
-                Dapatkan panduan komprehensif 150+ halaman yang berisi strategi, tips, dan real case studies 
-                automation workflow untuk berbagai industri.
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Nikmati video pembelajaran lengkap dengan strategi, tips, dan real case studies untuk menguasai automation di berbagai industri.
               </p>
             </div>
             
@@ -86,16 +86,16 @@ export default function EbookSection() {
             <div className="space-y-6">
               <div className="flex items-center gap-4 bg-gradient-to-r from-purple-500/20 to-blue-600/20 rounded-2xl p-6 border border-purple-400/30 backdrop-blur-sm">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#00ff88]">150+</div>
-                  <div className="text-sm text-gray-400">Halaman</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#00ff88]">15</div>
-                  <div className="text-sm text-gray-400">Case Studies</div>
-                </div>
-                <div className="text-center">
                   <div className="text-3xl font-bold text-[#00ff88]">20+</div>
-                  <div className="text-sm text-gray-400">Templates</div>
+                  <div className="text-sm text-gray-400">Jam Video</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#00ff88]">50+</div>
+                  <div className="text-sm text-gray-400">Studi Kasus</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#00ff88]">30+</div>
+                  <div className="text-sm text-gray-400">Video Praktik</div>
                 </div>
               </div>
               
@@ -104,12 +104,9 @@ export default function EbookSection() {
                 className="w-full bg-gradient-to-r from-[#00ff88] to-purple-500 hover:from-[#00cc6a] hover:to-purple-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold group transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-purple-500/25"
               >
                 <Download className="mr-3 w-5 h-5 group-hover:animate-bounce" />
-                Berlangganan Sekarang
+                Mulai Belajar Sekarang
               </Button>
-              
-              <p className="text-center text-gray-400 text-sm">
-                * Tersedia dalam format PDF, EPUB, dan online reading
-              </p>
+            
             </div>
           </div>
           
@@ -176,28 +173,29 @@ export default function EbookSection() {
         {/* Stats Section */}
         <div className="mt-20 bg-gradient-to-r from-white/5 to-purple-500/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
           <div className="text-center text-white mb-8">
-            <h3 className="text-2xl font-bold mb-2">Sudah Didownload Ribuan Kali!</h3>
+            <h3 className="text-2xl font-bold mb-2">Sudah Di Tonton Ribuan Kali!</h3>
             <p className="text-gray-300">E-book paling komprehensif tentang N8N automation di Indonesia</p>
           </div>
           
           <div className="grid md:grid-cols-4 gap-8 text-center text-white">
-            <div>
-              <div className="text-3xl font-bold text-[#00ff88] mb-2">5,847</div>
-              <div className="text-sm text-gray-400">Downloads</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">4.9/5</div>
-              <div className="text-sm text-gray-400">Rating</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-[#00ff88] mb-2">150+</div>
-              <div className="text-sm text-gray-400">Pages</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-              <div className="text-sm text-gray-400">Free</div>
-            </div>
-          </div>
+  <div>
+    <div className="text-3xl font-bold text-[#00ff88] mb-2">5,847+</div>
+    <div className="text-sm text-gray-400">Peserta Belajar</div>
+  </div>
+  <div>
+    <div className="text-3xl font-bold text-purple-400 mb-2">4.9/5</div>
+    <div className="text-sm text-gray-400">Rating</div>
+  </div>
+  <div>
+    <div className="text-3xl font-bold text-[#00ff88] mb-2">20+</div>
+    <div className="text-sm text-gray-400">Jam Video</div>
+  </div>
+  <div>
+    <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
+    <div className="text-sm text-gray-400">Bisa Diakses Kapan Saja</div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>

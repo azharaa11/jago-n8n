@@ -97,7 +97,7 @@ export default function FinalCTA() {
               <div className="w-12 h-12 bg-[#00ff88]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-[#00ff88]" />
               </div>
-              <h3 className="font-bold text-lg mb-2">Bonus 1.000 </h3>
+              <h3 className="font-bold text-lg mb-2">Bonus Rp. 100.000 </h3>
               <p className="text-gray-300 text-sm">Gratis untuk 100 orang pertama</p>
             </div>
 
