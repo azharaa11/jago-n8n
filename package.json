@@ -1,5 +1,5 @@
 {
-  "name": "Jago N8N",
+  "name": "jago-n8n",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -60,6 +60,6 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build"
+    "build": "vite build"
   }
 }
