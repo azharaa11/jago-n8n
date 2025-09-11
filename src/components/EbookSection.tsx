@@ -104,7 +104,7 @@ export default function EbookSection() {
                 className="w-full bg-gradient-to-r from-[#00ff88] to-purple-500 hover:from-[#00cc6a] hover:to-purple-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold group transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-purple-500/25"
               >
                 <Download className="mr-3 w-5 h-5 group-hover:animate-bounce" />
-                Download E-Book GRATIS
+                Berlangganan Sekarang
               </Button>
               
               <p className="text-center text-gray-400 text-sm">
@@ -128,7 +128,7 @@ export default function EbookSection() {
                       <div className="w-16 h-16 bg-gradient-to-r from-[#00ff88] to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                         <BookOpen className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold mb-2">Sobat N8N</h3>
+                      <h3 className="text-2xl font-bold mb-2">Jago N8N</h3>
                       <p className="text-[#00ff88] font-semibold mb-4">Panduan Lengkap</p>
                     </div>
                     

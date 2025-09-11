@@ -1,15 +1,15 @@
-import HeroSection from "./components/HeroSection";
-import ProblemAwareness from "./components/ProblemAwareness";
-import RealityCheck from "./components/RealityCheck";
-import TargetAudience from "./components/TargetAudience";
-import WhyDifferent from "./components/WhyDifferent";
-import LearningRoadmap from "./components/LearningRoadmap";
-import EbookSection from "./components/EbookSection";
-import ExclusiveBonus from "./components/ExclusiveBonus";
-import Testimonials from "./components/Testimonials";
-import FAQ from "./components/FAQ";
-import Pricing from "./components/Pricing";
-import FinalCTA from "./components/FinalCTA";
+import HeroSection from "./src/components/HeroSection";
+import ProblemAwareness from "./src/components/ProblemAwareness";
+import RealityCheck from "./src/components/RealityCheck";
+import TargetAudience from "./src/components/TargetAudience";
+import WhyDifferent from "./src/components/WhyDifferent";
+import LearningRoadmap from "./src/components/LearningRoadmap";
+import EbookSection from "./src/components/EbookSection";
+import ExclusiveBonus from "./src/components/ExclusiveBonus";
+import Testimonials from "./src/components/Testimonials";
+import FAQ from "./src/components/FAQ";
+import Pricing from "./src/components/Pricing";
+import FinalCTA from "./src/components/FinalCTA";
 
 export default function App() {
   return (

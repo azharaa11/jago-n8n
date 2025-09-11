@@ -97,7 +97,7 @@ export default function FinalCTA() {
               <div className="w-12 h-12 bg-[#00ff88]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-6 h-6 text-[#00ff88]" />
               </div>
-              <h3 className="font-bold text-lg mb-2">Bonus 10 Juta</h3>
+              <h3 className="font-bold text-lg mb-2">Bonus 1.000 </h3>
               <p className="text-gray-300 text-sm">Gratis untuk 100 orang pertama</p>
             </div>
 
@@ -110,61 +110,7 @@ export default function FinalCTA() {
             </div>
           </div>
 
-          {/* Urgency Counter */}
-          <div className="bg-red-600/20 border border-red-500/30 rounded-2xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-red-400 mb-4">
-              ⚠️ Penawaran Berakhir Dalam:
-            </h3>
-            <div className="flex justify-center gap-6 text-2xl font-bold mb-4">
-              <div className="bg-red-500/20 rounded-xl px-4 py-3 min-w-16">
-                <div className="text-red-400">{timeLeft.hours}</div>
-                <div className="text-xs text-red-300 font-normal">JAM</div>
-              </div>
-              <div className="bg-red-500/20 rounded-xl px-4 py-3 min-w-16">
-                <div className="text-red-400">{timeLeft.minutes}</div>
-                <div className="text-xs text-red-300 font-normal">MENIT</div>
-              </div>
-              <div className="bg-red-500/20 rounded-xl px-4 py-3 min-w-16">
-                <div className="text-red-400">{timeLeft.seconds}</div>
-                <div className="text-xs text-red-300 font-normal">DETIK</div>
-              </div>
-            </div>
-            <p className="text-red-300">
-              Setelah itu, harga kembali normal dan bonus hilang selamanya!
-            </p>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="space-y-6">
-            <Button 
-              size="lg"
-              className="bg-[#00ff88] hover:bg-[#00cc6a] text-[#0f172a] px-12 py-6 rounded-2xl text-xl font-bold group transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-[#00ff88]/25"
-            >
-              🚀 MULAI SEKARANG - GRATIS!
-              <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-            </Button>
-
-            <p className="text-gray-400 text-sm">
-              * Mulai dengan paket gratis, upgrade kapan saja
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <div className="flex items-center gap-2 text-sm text-gray-300">
-                <CheckCircle className="w-4 h-4 text-[#00ff88]" />
-                <span>30-day money back guarantee</span>
-              </div>
-              <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
-              <div className="flex items-center gap-2 text-sm text-gray-300">
-                <CheckCircle className="w-4 h-4 text-[#00ff88]" />
-                <span>No credit card required</span>
-              </div>
-              <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
-              <div className="flex items-center gap-2 text-sm text-gray-300">
-                <CheckCircle className="w-4 h-4 text-[#00ff88]" />
-                <span>Trusted by 1000+ learners</span>
-              </div>
-            </div>
-          </div>
+       
 
           {/* Final Message */}
           <div className="mt-16 p-8 bg-gradient-to-r from-[#00ff88]/10 to-transparent rounded-2xl border border-[#00ff88]/20">

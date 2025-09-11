@@ -5,22 +5,22 @@ export default function WhyDifferent() {
     {
       aspect: "Metode Pembelajaran",
       others: "Teori bertele-tele, slide presentation boring",
-      sobatN8N: "Langsung praktik real case, learning by doing"
+      jagoN8N: "Langsung praktik real case, learning by doing"
     },
     {
       aspect: "Fokus Konten",
       others: "Cuma teori automation, nggak ada implementasi nyata",
-      sobatN8N: "Real world projects yang bisa langsung dipakai kerja"
+      jagoN8N: "Real world projects yang bisa langsung dipakai kerja"
     },
     {
       aspect: "Support System",
       others: "Beli course terus ditinggal, nggak ada komunitas",
-      sobatN8N: "Community support aktif, mentoring, Q&A session"
+      jagoN8N: "Community support aktif, mentoring, Q&A session"
     },
     {
       aspect: "Update Materi",
       others: "Sekali buat, nggak pernah update lagi",
-      sobatN8N: "Materi selalu update mengikuti perkembangan n8n"
+      jagoN8N: "Materi selalu update mengikuti perkembangan n8n"
     }
   ];
 
@@ -77,7 +77,7 @@ export default function WhyDifferent() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#0f172a] mb-6">
-            Kenapa Sobat N8N
+            Kenapa Jago N8N
             <span className="block text-[#00ff88]">Berbeda?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -95,7 +95,7 @@ export default function WhyDifferent() {
                 <p className="text-sm text-gray-300">Teori & Membosankan</p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold text-[#00ff88]">Sobat N8N</h3>
+                <h3 className="text-xl font-bold text-[#00ff88]">Jago N8N</h3>
                 <p className="text-sm text-gray-300">Praktik & Real Case</p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function WhyDifferent() {
                 <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Check className="w-4 h-4 text-[#00cc6a]" />
                 </div>
-                <p className="text-gray-600">{comparison.sobatN8N}</p>
+                <p className="text-gray-600">{comparison.jagoN8N}</p>
               </div>
             </div>
           ))}

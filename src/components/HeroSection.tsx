@@ -168,7 +168,7 @@ export default function HeroSection() {
             >
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-[#00ff88] via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Sobat N8N
+                  Jago N8N
                 </span>
                 <span className="block text-white mt-4">
                   Automation

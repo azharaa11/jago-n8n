@@ -8,7 +8,7 @@ export default function Testimonials() {
       company: "PT. Tech Solutions",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Setelah belajar di Sobat N8N, saya berhasil otomatisasi semua campaign marketing. Sekarang hemat 6 jam per hari dan ROI campaign naik 150%!",
+      text: "Setelah belajar di Jago N8N, saya berhasil otomatisasi semua campaign marketing. Sekarang hemat 6 jam per hari dan ROI campaign naik 150%!",
       highlight: "ROI naik 150%",
       icon: TrendingUp
     },
@@ -18,7 +18,7 @@ export default function Testimonials() {
       company: "Independent",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Dulu handle 5 client sudah overwhelmed. Setelah pakai automation dari Sobat N8N, sekarang bisa handle 15 client dengan mudah. Income naik 3x lipat!",
+      text: "Dulu handle 5 client sudah overwhelmed. Setelah pakai automation dari Jago N8N, sekarang bisa handle 15 client dengan mudah. Income naik 3x lipat!",
       highlight: "Income naik 3x",
       icon: DollarSign
     },
@@ -28,7 +28,7 @@ export default function Testimonials() {
       company: "EduTech Startup",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Automation workflow dari Sobat N8N menghemat biaya operasional startup saya sampai 70%. Tim bisa fokus ke product development instead of manual tasks.",
+      text: "Automation workflow dari Jago N8N menghemat biaya operasional startup saya sampai 70%. Tim bisa fokus ke product development instead of manual tasks.",
       highlight: "Hemat 70% biaya ops",
       icon: TrendingUp
     },

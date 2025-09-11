@@ -1,5 +1,7 @@
 import { Button } from "./ui/button";
 import { Check, Crown, Zap, Gift, Star } from "lucide-react";
+import Countdown from "./Coutdown"; // benar
+
 
 export default function Pricing() {
   return (
@@ -80,7 +82,7 @@ export default function Pricing() {
             </div>
             
             <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl text-lg font-semibold">
-              Mulai Gratis Sekarang
+              Mulai Sekarang
             </Button>
             
             <p className="text-center text-sm text-gray-300 mt-4">
@@ -192,6 +194,7 @@ export default function Pricing() {
             <p>Setelah countdown selesai: Harga NAIK PERMANEN menjadi Rp 2.999.000 💸 & Semua bonus eksklusif HILANG SELAMANYA ❌</p>
           </div>
         </div>
+        <Countdown/>
       </div>
     </section>
   );

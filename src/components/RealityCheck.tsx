@@ -129,7 +129,7 @@ export default function RealityCheck() {
             
             <div className="mt-8 p-4 bg-green-50 rounded-xl border border-[#00ff88]">
               <p className="text-[#00cc6a] text-center font-semibold">
-                "Alhamdulillah belajar automation di Sobat N8N!"
+                "Alhamdulillah belajar automation di Jago N8N!"
               </p>
             </div>
           </div>

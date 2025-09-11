@@ -5,11 +5,11 @@ export default function FAQ() {
   const faqs = [
     {
       question: "Apakah saya perlu background programming untuk belajar n8n?",
-      answer: "Tidak sama sekali! N8N adalah platform no-code yang dirancang untuk non-programmer. Di Sobat N8N, kami mengajarkan dengan pendekatan visual drag-and-drop yang mudah dipahami bahkan untuk pemula."
+      answer: "Tidak sama sekali! N8N adalah platform no-code yang dirancang untuk non-programmer. Di Jago N8N, kami mengajarkan dengan pendekatan visual drag-and-drop yang mudah dipahami bahkan untuk pemula."
     },
     {
       question: "Berapa lama waktu yang dibutuhkan untuk menguasai automation?",
-      answer: "Dengan roadmap belajar 3 minggu di Sobat N8N, kamu sudah bisa membuat automation workflow yang powerful. Minggu pertama untuk foundation, minggu kedua real implementation, dan minggu ketiga advanced optimization."
+      answer: "Dengan roadmap belajar 3 minggu di Jago N8N, kamu sudah bisa membuat automation workflow yang powerful. Minggu pertama untuk foundation, minggu kedua real implementation, dan minggu ketiga advanced optimization."
     },
     {
       question: "Apakah materi akan selalu update mengikuti perkembangan n8n?",
@@ -17,7 +17,7 @@ export default function FAQ() {
     },
     {
       question: "Bagaimana dengan support jika saya stuck di tengah pembelajaran?",
-      answer: "Sobat N8N punya community support yang aktif 24/7. Plus ada weekly Q&A session dengan mentor, dan untuk member premium ada 1-on-1 consultation call."
+      answer: "Jago N8N punya community support yang aktif 24/7. Plus ada weekly Q&A session dengan mentor, dan untuk member premium ada 1-on-1 consultation call."
     },
     {
       question: "Apakah automation ini bisa diterapkan untuk bisnis kecil?",
@@ -25,7 +25,7 @@ export default function FAQ() {
     },
     {
       question: "Saya sudah punya basic knowledge n8n, apakah course ini cocok?",
-      answer: "Sangat cocok! Sobat N8N punya learning path untuk semua level. Kamu bisa skip basic dan langsung ke advanced topics, atau review fundamental untuk strengthen foundation."
+      answer: "Sangat cocok! Jago N8N punya learning path untuk semua level. Kamu bisa skip basic dan langsung ke advanced topics, atau review fundamental untuk strengthen foundation."
     },
     {
       question: "Bagaimana guarantee jika saya tidak satisfied dengan course ini?",
@@ -33,7 +33,7 @@ export default function FAQ() {
     },
     {
       question: "Apakah ada certificate setelah menyelesaikan course?",
-      answer: "Ya! Setelah menyelesaikan semua module dan project, kamu akan mendapat Sobat N8N Automation Expert Certificate yang bisa kamu pakai untuk CV dan LinkedIn profile."
+      answer: "Ya! Setelah menyelesaikan semua module dan project, kamu akan mendapat Jago N8N Automation Expert Certificate yang bisa kamu pakai untuk CV dan LinkedIn profile."
     }
   ];
 
@@ -118,7 +118,7 @@ export default function FAQ() {
               </div>
               <div className="flex items-center gap-3 bg-white/10 rounded-2xl px-6 py-4">
                 <div className="w-3 h-3 bg-[#00ff88] rounded-full animate-pulse"></div>
-                <span>Email: hello@sobatn8n.com</span>
+                <span>Email: hello@jagon8n.com</span>
               </div>
             </div>
           </div>
