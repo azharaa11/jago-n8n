@@ -10,11 +10,10 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3000,
-    open: true
+    port: 3000
   },
   build: {
     target: 'esnext',
-    outDir: 'build'
+    outDir: 'dist' // gunakan default dist supaya Vercel mengenali folder statis
   }
 });

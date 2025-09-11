@@ -1,4 +1,3 @@
-HEAD
 # Sobat-N8N
 
   # Modern Elegant Landing Page
