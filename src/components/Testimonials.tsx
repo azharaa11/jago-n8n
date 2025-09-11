@@ -158,44 +158,32 @@ export default function Testimonials() {
         </div>
         
         {/* Trust Signals */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 shadow-xl border border-white/20">
-          <h3 className="text-2xl font-bold text-center text-white mb-8">
-            Dipercaya oleh 1000+ Professionals
-          </h3>
-          
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-[#00ff88]">1000+</div>
-              <div className="text-sm text-gray-300">Happy Learners</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-[#00ff88]">4.9/5</div>
-              <div className="text-sm text-gray-300">Average Rating</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-[#00ff88]">95%</div>
-              <div className="text-sm text-gray-300">Success Rate</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-[#00ff88]">100%</div>
-              <div className="text-sm text-gray-300">Satisfaction</div>
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-              "Platform terbaik untuk belajar automation di Indonesia. Materi lengkap, mentor berpengalaman, dan komunitas yang supportif."
-            </p>
-            <div className="mt-4 flex items-center justify-center gap-2">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <span className="text-gray-300 ml-2">- Google Reviews</span>
-            </div>
-          </div>
-        </div>
+<div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 shadow-xl border border-white/20">
+  <h3 className="text-lg md:text-2xl font-bold text-center text-white mb-8">
+    Dipercaya oleh 1000+ Professionals
+  </h3>
+
+  {/* Mobile = flex, Desktop = grid */}
+  <div className="flex flex-wrap justify-center items-center gap-4 text-center md:grid md:grid-cols-4 md:gap-8">
+    <div className="space-y-1 md:space-y-2 min-w-[70px]">
+      <div className="text-base md:text-4xl font-bold text-[#00ff88]">1000+</div>
+      <div className="text-[10px] md:text-sm text-gray-300">Happy Learners</div>
+    </div>
+    <div className="space-y-1 md:space-y-2 min-w-[70px]">
+      <div className="text-base md:text-4xl font-bold text-[#00ff88]">4.9/5</div>
+      <div className="text-[10px] md:text-sm text-gray-300">Average Rating</div>
+    </div>
+    <div className="space-y-1 md:space-y-2 min-w-[70px]">
+      <div className="text-base md:text-4xl font-bold text-[#00ff88]">95%</div>
+      <div className="text-[10px] md:text-sm text-gray-300">Success Rate</div>
+    </div>
+    <div className="space-y-1 md:space-y-2 min-w-[70px]">
+      <div className="text-base md:text-4xl font-bold text-[#00ff88]">100%</div>
+      <div className="text-[10px] md:text-sm text-gray-300">Satisfaction</div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

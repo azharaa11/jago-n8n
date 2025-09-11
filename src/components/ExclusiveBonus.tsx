@@ -114,42 +114,49 @@ export default function ExclusiveBonus() {
           ))}
         </div>
         
-        <div className="bg-gradient-to-r from-[#00ff88] to-[#00cc6a] rounded-3xl p-12 text-[#0f172a] text-center">
-          <div className="max-w-4xl mx-auto">
-            <Gift className="w-20 h-20 mx-auto mb-6" />
-            
-            <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-              Dapatkan Bonus Eksklusif Senilai Rp 10 Juta – 100% Gratis!
-            </h3>
-            
-            <p className="text-xl mb-8 opacity-80">
-              Tapi kamu bisa dapatkan SEMUA bonus ini GRATIS kalau daftar sekarang!
-            </p>
-            
-            <div className="bg-[#0f172a]/10 rounded-2xl p-6 mb-8">
-              <p className="text-lg font-semibold mb-2">
-                ⚡ Penawaran Terbatas!
-              </p>
-              <p className="opacity-80">
-                Bonus ini hanya berlaku untuk 100 pendaftar pertama. Setelah itu, semua bonus ini akan dijual terpisah dengan harga normal.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">73</div>
-                <div className="text-sm opacity-80">Slot Tersisa</div>
-              </div>
-              
-              <div className="hidden sm:block w-px h-12 bg-[#0f172a]/20"></div>
-              
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">⏰</div>
-                <div className="text-sm opacity-80">Berakhir Besok</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="
+  bg-gradient-to-r from-[#00ff88] to-[#00cc6a] 
+  rounded-xl 
+  p-4 sm:p-6 lg:p-12 
+  text-[#0f172a] text-center
+">
+  <div className="max-w-4xl mx-auto">
+    <Gift className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mx-auto mb-4 sm:mb-6" />
+    
+    <h3 className="text-base sm:text-2xl lg:text-4xl font-bold mb-2 sm:mb-4">
+      Dapatkan Bonus Eksklusif Senilai Rp 10 Juta – 100% Gratis!
+    </h3>
+    
+    <p className="text-xs sm:text-base lg:text-xl mb-4 sm:mb-8 opacity-80">
+      Tapi kamu bisa dapatkan SEMUA bonus ini GRATIS kalau daftar sekarang!
+    </p>
+    
+    <div className="bg-[#0f172a]/10 rounded-lg sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
+      <p className="text-sm sm:text-lg font-semibold mb-1 sm:mb-2">
+        ⚡ Penawaran Terbatas!
+      </p>
+      <p className="text-xs sm:text-base opacity-80">
+        Bonus ini hanya berlaku untuk 100 pendaftar pertama. Setelah itu, semua bonus ini akan dijual terpisah dengan harga normal.
+      </p>
+    </div>
+    
+    <div className="flex flex-row gap-6 justify-center items-center">
+  <div className="text-center">
+    <div className="text-xl sm:text-3xl font-bold mb-1">73</div>
+    <div className="text-xs sm:text-sm opacity-80">Slot Tersisa</div>
+  </div>
+
+  <div className="w-px h-8 sm:h-12 bg-[#0f172a]/20"></div>
+
+  <div className="text-center">
+    <div className="text-xl sm:text-3xl font-bold mb-1">⏰</div>
+    <div className="text-xs sm:text-sm opacity-80">Berakhir Besok</div>
+  </div>
+</div>
+
+  </div>
+</div>
+
       </div>
     </section>
   );

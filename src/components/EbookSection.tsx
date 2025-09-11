@@ -84,20 +84,21 @@ export default function EbookSection() {
             </div>
             
             <div className="space-y-6">
-              <div className="flex items-center gap-4 bg-gradient-to-r from-purple-500/20 to-blue-600/20 rounded-2xl p-6 border border-purple-400/30 backdrop-blur-sm">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#00ff88]">20+</div>
-                  <div className="text-sm text-gray-400">Jam Video</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#00ff88]">50+</div>
-                  <div className="text-sm text-gray-400">Studi Kasus</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#00ff88]">30+</div>
-                  <div className="text-sm text-gray-400">Video Praktik</div>
-                </div>
-              </div>
+              <div className="flex justify-center items-center gap-8 bg-gradient-to-r from-purple-500/20 to-blue-600/20 rounded-2xl p-6 border border-purple-400/30 backdrop-blur-sm">
+  <div className="text-center">
+    <div className="text-3xl font-bold text-[#00ff88]">20+</div>
+    <div className="text-sm text-gray-400">Jam Video</div>
+  </div>
+  <div className="text-center">
+    <div className="text-3xl font-bold text-[#00ff88]">50+</div>
+    <div className="text-sm text-gray-400">Studi Kasus</div>
+  </div>
+  <div className="text-center">
+    <div className="text-3xl font-bold text-[#00ff88]">30+</div>
+    <div className="text-sm text-gray-400">Video Praktik</div>
+  </div>
+</div>
+
               
               <Button 
                 size="lg"
@@ -110,64 +111,65 @@ export default function EbookSection() {
             </div>
           </div>
           
-          {/* Right Visual - E-book Cover */}
-          <div className="relative">
-            <div className="relative z-10 group">
-              {/* Main Book Cover */}
-              <div className="bg-gradient-to-br from-white to-gray-100 rounded-3xl p-8 shadow-2xl transform rotate-3 group-hover:rotate-0 transition-all duration-500 border-4 border-white/20 backdrop-blur-sm">
-                <div className="bg-gradient-to-br from-[#0f172a] via-purple-900 to-[#1e293b] rounded-2xl p-8 text-white relative overflow-hidden">
-                  {/* Book cover decorative elements */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-[#00ff88]/20 rounded-full blur-xl"></div>
-                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-purple-500/20 rounded-full blur-lg"></div>
-                  
-                  <div className="relative z-10 space-y-6">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gradient-to-r from-[#00ff88] to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <BookOpen className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold mb-2">Jago N8N</h3>
-                      <p className="text-[#00ff88] font-semibold mb-4">Panduan Lengkap</p>
-                    </div>
-                    
-                    <div className="text-center space-y-2">
-                      <h4 className="text-xl font-bold">N8N AUTOMATION</h4>
-                      <p className="text-sm text-gray-300">Master Guide</p>
-                    </div>
-                    
-                    <div className="flex justify-center">
-                      <ImageWithFallback
-                        src="https://images.unsplash.com/photo-1721369561708-6110173f5aa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGRpZ2l0YWwlMjBib29rJTIwY292ZXIlMjBtb2Rlcm4lMjBkZXNpZ258ZW58MXx8fHwxNzU3NDc2NTU2fDA&ixlib=rb-4.0&q=80&w=200"
-                        alt="Automation Workflow"
-                        className="w-24 h-16 object-cover rounded-lg opacity-60"
-                      />
-                    </div>
-                    
-                    <div className="text-center">
-                      <div className="flex justify-center gap-1 mb-2">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <p className="text-xs text-gray-400">Rated 4.9/5 by readers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Shadow books behind */}
-              <div className="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-br from-purple-600/30 to-blue-600/30 rounded-3xl -z-10 backdrop-blur-sm border border-white/10"></div>
-              <div className="absolute -bottom-8 -right-8 w-full h-full bg-gradient-to-br from-[#00ff88]/20 to-purple-500/20 rounded-3xl -z-20 backdrop-blur-sm"></div>
+       {/* Right Visual - E-book Cover */}
+<div className="relative hidden md:block">
+  <div className="relative z-10 group">
+    {/* Main Book Cover */}
+    <div className="bg-gradient-to-br from-white to-gray-100 rounded-3xl p-8 shadow-2xl transform rotate-3 group-hover:rotate-0 transition-all duration-500 border-4 border-white/20 backdrop-blur-sm">
+      <div className="bg-gradient-to-br from-[#0f172a] via-purple-900 to-[#1e293b] rounded-2xl p-8 text-white relative overflow-hidden">
+        {/* Book cover decorative elements */}
+        <div className="absolute top-0 right-0 w-20 h-20 bg-[#00ff88]/20 rounded-full blur-xl"></div>
+        <div className="absolute bottom-0 left-0 w-16 h-16 bg-purple-500/20 rounded-full blur-lg"></div>
+        
+        <div className="relative z-10 space-y-6">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-[#00ff88] to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <BookOpen className="w-8 h-8 text-white" />
             </div>
-            
-            {/* Floating Icons */}
-            <div className="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-r from-[#00ff88] to-purple-500 rounded-full flex items-center justify-center animate-bounce shadow-lg">
-              <Zap className="w-8 h-8 text-white" />
-            </div>
-            
-            <div className="absolute -bottom-8 -right-8 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center animate-pulse shadow-lg">
-              <Trophy className="w-6 h-6 text-white" />
-            </div>
+            <h3 className="text-2xl font-bold mb-2">Jago N8N</h3>
+            <p className="text-[#00ff88] font-semibold mb-4">Panduan Lengkap</p>
           </div>
+          
+          <div className="text-center space-y-2">
+            <h4 className="text-xl font-bold">N8N AUTOMATION</h4>
+            <p className="text-sm text-gray-300">Master Guide</p>
+          </div>
+          
+          <div className="flex justify-center">
+            <ImageWithFallback
+              src="https://images.unsplash.com/photo-1721369561708-6110173f5aa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGRpZ2l0YWwlMjBib29rJTIwY292ZXIlMjBtb2Rlcm4lMjBkZXNpZ258ZW58MXx8fHwxNzU3NDc2NTU2fDA&ixlib=rb-4.0&q=80&w=200"
+              alt="Automation Workflow"
+              className="w-24 h-16 object-cover rounded-lg opacity-60"
+            />
+          </div>
+          
+          <div className="text-center">
+            <div className="flex justify-center gap-1 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p className="text-xs text-gray-400">Rated 4.9/5 by readers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Shadow books behind */}
+    <div className="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-br from-purple-600/30 to-blue-600/30 rounded-3xl -z-10 backdrop-blur-sm border border-white/10"></div>
+    <div className="absolute -bottom-8 -right-8 w-full h-full bg-gradient-to-br from-[#00ff88]/20 to-purple-500/20 rounded-3xl -z-20 backdrop-blur-sm"></div>
+  </div>
+  
+  {/* Floating Icons */}
+  <div className="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-r from-[#00ff88] to-purple-500 rounded-full flex items-center justify-center animate-bounce shadow-lg">
+    <Zap className="w-8 h-8 text-white" />
+  </div>
+  
+  <div className="absolute -bottom-8 -right-8 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center animate-pulse shadow-lg">
+    <Trophy className="w-6 h-6 text-white" />
+  </div>
+</div>
+
         </div>
         
         {/* Stats Section */}

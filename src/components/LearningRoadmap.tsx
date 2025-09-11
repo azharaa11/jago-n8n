@@ -138,32 +138,40 @@ export default function LearningRoadmap() {
           </div>
         </div>
         
-        <div className="mt-20 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-3xl p-12 text-white text-center">
-          <div className="max-w-4xl mx-auto">
-            <Zap className="w-16 h-16 text-[#00ff88] mx-auto mb-6" />
-            <h3 className="text-3xl font-bold mb-6">
-              Siap Jadi Automation Expert dalam 3 Minggu?
-            </h3>
-            <p className="text-xl text-gray-300 mb-8">
-              Dengan metode learning by doing, kamu akan langsung praktik dan bisa implement di pekerjaan real-time.
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[#00ff88] mb-2">21</div>
-                <div className="text-gray-300">Hari Transformasi</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[#00ff88] mb-2">15+</div>
-                <div className="text-gray-300">Real Projects</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[#00ff88] mb-2">∞</div>
-                <div className="text-gray-300">Lifetime Access</div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-20 px-4">
+  <div className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] 
+                  rounded-2xl md:rounded-3xl 
+                  p-6 md:p-10 lg:p-14 
+                  text-white text-center 
+                  max-w-2xl mx-auto shadow-lg hover:shadow-2xl transition-all duration-300">
+    <div className="max-w-xl mx-auto">
+      <Zap className="w-10 h-10 md:w-14 md:h-14 text-[#00ff88] mx-auto mb-4" />
+      <h3 className="text-xl md:text-3xl font-bold mb-4">
+        Siap Jadi Automation Expert dalam 3 Minggu?
+      </h3>
+      <p className="text-base md:text-lg text-gray-300 mb-6 leading-relaxed">
+        Dengan metode learning by doing, kamu akan langsung praktik 
+        dan bisa implement di pekerjaan real-time.
+      </p>
+
+      <div className="grid grid-cols-3 gap-4 md:gap-8 mt-8">
+        <div className="text-center">
+          <div className="text-2xl md:text-4xl font-bold text-[#00ff88] mb-1">21</div>
+          <div className="text-gray-300 text-xs md:text-base">Hari Transformasi</div>
         </div>
+        <div className="text-center">
+          <div className="text-2xl md:text-4xl font-bold text-[#00ff88] mb-1">15+</div>
+          <div className="text-gray-300 text-xs md:text-base">Real Projects</div>
+        </div>
+        <div className="text-center">
+          <div className="text-2xl md:text-4xl font-bold text-[#00ff88] mb-1">∞</div>
+          <div className="text-gray-300 text-xs md:text-base">Lifetime Access</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

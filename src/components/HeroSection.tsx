@@ -156,8 +156,13 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Sparkles className="w-5 h-5 animate-pulse" />
-              <span className="font-semibold">MODUL PEMBELAJARAN TERLENGKAP</span>
+              <div className="inline-flex items-center gap-2">
+  <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" />
+  <span className="font-semibold text-xs sm:text-sm md:text-base">
+    MODUL PEMBELAJARAN TERLENGKAP
+  </span>
+</div>
+
             </motion.div>
             
             <motion.div
@@ -179,51 +184,63 @@ export default function HeroSection() {
               </h1>
               
               <p className="text-xl lg:text-xl text-gray-300 leading-relaxed max-w-2xl">
-               Modul lengkap dan terstruktur untuk menguasai N8N. Cocok untuk pemula maupun profesional yang ingin mempercepat bisnis dengan otomatisasi.
+               Modul lengkap dan terstruktur untuk menguasai N8N, Cocok untuk pemula maupun profesional.
               </p>
             </motion.div>
             
             {/* Stats */}
-            <motion.div
-              className="grid grid-cols-3 gap-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                <motion.div
-                  className="text-3xl font-bold text-[#00ff88] mb-1"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.7, type: "spring" }}
-                >
-                  1000+
-                </motion.div>
-                <div className="text-sm text-gray-400">Peserta Belajar</div>
-              </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                <motion.div
-                  className="text-3xl font-bold text-purple-400 mb-1"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
-                >
-                  50+
-                </motion.div>
-                <div className="text-sm text-gray-400">Modul</div>
-              </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                <motion.div
-                  className="text-3xl font-bold text-blue-400 mb-1"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
-                >
-                  95%
-                </motion.div>
-                <div className="text-sm text-gray-400">Peserta Puas</div>
-              </div>
-            </motion.div>
+           <motion.div
+  className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.5 }}
+>
+  {/* Card 1 */}
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border border-white/10">
+    <motion.div
+      className="text-lg sm:text-xl md:text-3xl font-bold text-[#00ff88] mb-1"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.7, type: "spring" }}
+    >
+      999+
+    </motion.div>
+    <div className="text-[10px] sm:text-xs md:text-sm text-gray-400">
+      Peserta Belajar
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border border-white/10">
+    <motion.div
+      className="text-lg sm:text-xl md:text-3xl font-bold text-purple-400 mb-1"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
+    >
+      50+
+    </motion.div>
+    <div className="text-[10px] sm:text-xs md:text-sm text-gray-400">
+      Modul
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border border-white/10">
+    <motion.div
+      className="text-lg sm:text-xl md:text-3xl font-bold text-blue-400 mb-1"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
+    >
+      95%
+    </motion.div>
+    <div className="text-[10px] sm:text-xs md:text-sm text-gray-400">
+      Peserta Puas
+    </div>
+  </div>
+</motion.div>
+
             
             {/* CTAs */}
             <motion.div
@@ -297,12 +314,12 @@ export default function HeroSection() {
           </motion.div>
           
           {/* Right Visual */}
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
+         <motion.div
+  className="relative hidden lg:block"   // <-- tambahin hidden lg:block
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+>
             {/* Main Automation Visual */}
             <div className="relative">
               {/* Central Hub */}
@@ -434,44 +451,62 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <p className="text-gray-400 mb-8 text-lg">Pelajari Integrasi dengan 300+ Platform Populer</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
-            {[
-              { name: 'Slack', icon: '💬', color: 'from-purple-500 to-pink-500' },
-              { name: 'Gmail', icon: '📧', color: 'from-red-500 to-orange-500' },
-              { name: 'Shopify', icon: '🛍️', color: 'from-green-500 to-emerald-500' },
-              { name: 'Discord', icon: '🎮', color: 'from-indigo-500 to-purple-500' },
-              { name: 'Notion', icon: '📝', color: 'from-gray-600 to-gray-800' },
-              { name: 'Airtable', icon: '📊', color: 'from-blue-500 to-cyan-500' }
-            ].map((brand, index) => (
-              <motion.div
-                key={brand.name}
-                className="group"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
-                whileHover={{ scale: 1.08, y: -5 }}
-              >
-                <div className="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 group-hover:bg-white/12">
-                  {/* Brand Logo/Icon */}
-                  <div className={`w-12 h-12 bg-gradient-to-r ${brand.color} rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform duration-300`}>
-                    <span className="text-2xl filter brightness-110">{brand.icon}</span>
-                  </div>
-                  
-                  {/* Brand Name */}
-                  <div className="text-white font-semibold text-sm group-hover:text-[#00ff88] transition-colors duration-300">
-                    {brand.name}
-                  </div>
-                  
-                  {/* Connection Status */}
-                  {/* <div className="flex items-center justify-center gap-1 mt-2">
-                    <div className="w-2 h-2 bg-[#00ff88] rounded-full animate-pulse"></div>
-                    <span className="text-xs text-gray-400 group-hover:text-gray-300"></span>
-                  </div> */}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+ <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-8">Pelajari Integrasi dengan 300+ Platform Populer</p>
+          {/* Mobile: hanya logo, sejajar 1 baris */}
+<div className="flex justify-between items-center gap-2 lg:hidden max-w-xs mx-auto">
+  {[
+    { name: 'Slack', icon: '💬', color: 'from-purple-500 to-pink-500' },
+    { name: 'Gmail', icon: '📧', color: 'from-red-500 to-orange-500' },
+    { name: 'Shopify', icon: '🛍️', color: 'from-green-500 to-emerald-500' },
+    { name: 'Discord', icon: '🎮', color: 'from-indigo-500 to-purple-500' },
+    { name: 'Notion', icon: '📝', color: 'from-gray-600 to-gray-800' },
+    { name: 'Airtable', icon: '📊', color: 'from-blue-500 to-cyan-500' }
+  ].map((brand, index) => (
+    <motion.div
+      key={brand.name}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
+      whileHover={{ scale: 1.05 }}
+      className={`w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r ${brand.color} rounded-xl flex items-center justify-center`}
+    >
+      <span className="text-base sm:text-lg">{brand.icon}</span>
+    </motion.div>
+  ))}
+</div>
+
+{/* Desktop: grid dengan logo + nama */}
+<div className="hidden lg:grid grid-cols-6 gap-6 max-w-5xl mx-auto">
+  {[
+    { name: 'Slack', icon: '💬', color: 'from-purple-500 to-pink-500' },
+    { name: 'Gmail', icon: '📧', color: 'from-red-500 to-orange-500' },
+    { name: 'Shopify', icon: '🛍️', color: 'from-green-500 to-emerald-500' },
+    { name: 'Discord', icon: '🎮', color: 'from-indigo-500 to-purple-500' },
+    { name: 'Notion', icon: '📝', color: 'from-gray-600 to-gray-800' },
+    { name: 'Airtable', icon: '📊', color: 'from-blue-500 to-cyan-500' }
+  ].map((brand, index) => (
+    <motion.div
+      key={brand.name}
+      className="group"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
+      whileHover={{ scale: 1.08, y: -5 }}
+    >
+      <div className="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 group-hover:bg-white/12">
+        <div
+          className={`w-12 h-12 bg-gradient-to-r ${brand.color} rounded-xl flex items-center justify-center mb-3 mx-auto group-hover:scale-110 transition-transform duration-300`}
+        >
+          <span className="text-2xl filter brightness-110">{brand.icon}</span>
+        </div>
+        <div className="text-white font-semibold text-sm group-hover:text-[#00ff88] transition-colors duration-300">
+          {brand.name}
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
           
           {/* Integration Stats */}
           <motion.div
@@ -480,21 +515,32 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.8 }}
           >
-            <div className="flex items-center gap-2 text-gray-300">
-              <div className="w-3 h-3 bg-[#00ff88] rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">300+ Studi Kasus</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse animation-delay-300"></div>
-              <span className="text-sm font-medium">Belajar Tanpa Ribet</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse animation-delay-500"></div>
-              <span className="text-sm font-medium">Praktik Langsung</span>
-            </div>
-            <div className="h-24"></div>
+            <div
+  className="
+    flex flex-wrap justify-center items-center gap-6 text-gray-300
+    mb-8 sm:mb-16
+  "
+>
+  <div className="flex items-center gap-2">
+    <div className="w-3 h-3 bg-[#00ff88] rounded-full animate-pulse"></div>
+    <span className="text-sm font-medium">300+ Studi Kasus</span>
+  </div>
+
+  <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
+
+  <div className="flex items-center gap-2">
+    <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse animation-delay-300"></div>
+    <span className="text-sm font-medium">Belajar Tanpa Ribet</span>
+  </div>
+
+  <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
+
+  <div className="flex items-center gap-2">
+    <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse animation-delay-500"></div>
+    <span className="text-sm font-medium">Praktik Langsung</span>
+  </div>
+</div>
+
           </motion.div>
         </motion.div>
       </div>

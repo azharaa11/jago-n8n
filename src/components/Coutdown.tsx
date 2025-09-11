@@ -30,7 +30,15 @@ export default function FlashSaleCard() {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", display: "flex", justifyContent: "center", marginTop: "20px" }}>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "20px",
+      }}
+    >
       {/* ===== Card ===== */}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
@@ -42,13 +50,45 @@ export default function FlashSaleCard() {
           maxWidth: "900px",
           width: "95%",
           borderRadius: "25px",
-          padding: "30px",
+          padding: "20px",
           background: "linear-gradient(135deg, #e40000, #ff6600)",
           boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
           overflow: "hidden",
           color: "white",
         }}
       >
+        {/* Responsive Style */}
+        <style>
+          {`
+            @media (max-width: 640px) {
+              .flash-title {
+                font-size: 20px !important;
+                flex-direction: column !important;
+                text-align: center;
+                gap: 4px !important;
+              }
+              .countdown {
+                gap: 12px !important;
+              }
+              .count-box {
+                padding: 12px 14px !important;
+              }
+              .count-box-value {
+                font-size: 26px !important;
+              }
+              .promo-text {
+                font-size: 14px !important;
+                padding: 10px !important;
+              }
+              .footer-info {
+                flex-direction: column !important;
+                gap: 8px !important;
+                font-size: 12px !important;
+              }
+            }
+          `}
+        </style>
+
         {/* Background decorative elements */}
         <GlowCircle top="10%" left="15%" size="150px" color="rgba(255,255,0,0.1)" />
         <GlowCircle top="60%" left="75%" size="200px" color="rgba(255,0,0,0.15)" />
@@ -63,10 +103,11 @@ export default function FlashSaleCard() {
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          className="flash-title"
           style={{
             fontSize: "32px",
             fontWeight: "900",
-            marginBottom: "25px",
+            marginBottom: "20px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -83,6 +124,7 @@ export default function FlashSaleCard() {
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.7 }}
+          className="countdown"
           style={{ display: "flex", justifyContent: "center", gap: "30px", marginBottom: "20px" }}
         >
           <Box value={timeLeft.hours} label="JAM" />
@@ -95,6 +137,7 @@ export default function FlashSaleCard() {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
+          className="promo-text"
           style={{
             background: "linear-gradient(90deg, #a40000, #660000)",
             padding: "12px",
@@ -118,6 +161,7 @@ export default function FlashSaleCard() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
+          className="footer-info"
           style={{ display: "flex", justifyContent: "center", gap: "25px", fontSize: "14px" }}
         >
           <span><Dot color="white" /> Hanya tersisa 47 slot</span>
@@ -142,6 +186,7 @@ function Box({ value, label }) {
         ],
       }}
       transition={{ duration: 1.5, repeat: Infinity }}
+      className="count-box"
       style={{
         background: "rgba(255,255,255,0.1)",
         padding: "20px 25px",
@@ -149,7 +194,7 @@ function Box({ value, label }) {
         textAlign: "center",
       }}
     >
-      <div style={{ fontSize: "42px", fontWeight: "bold", color: "#ffeb3b" }}>
+      <div className="count-box-value" style={{ fontSize: "42px", fontWeight: "bold", color: "#ffeb3b" }}>
         {String(value).padStart(2, "0")}
       </div>
       <div style={{ fontSize: "14px", marginTop: "5px", fontWeight: "bold", color: "white" }}>
