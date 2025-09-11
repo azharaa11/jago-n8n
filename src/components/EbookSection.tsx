@@ -172,33 +172,35 @@ export default function EbookSection() {
 
         </div>
         
-        {/* Stats Section */}
-        <div className="mt-20 bg-gradient-to-r from-white/5 to-purple-500/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-          <div className="text-center text-white mb-8">
-            <h3 className="text-2xl font-bold mb-2">Sudah Di Tonton Ribuan Kali!</h3>
-            <p className="text-gray-300">E-book paling komprehensif tentang N8N automation di Indonesia</p>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-8 text-center text-white">
-  <div>
-    <div className="text-3xl font-bold text-[#00ff88] mb-2">5,847+</div>
-    <div className="text-sm text-gray-400">Peserta Belajar</div>
+       {/* Stats Section */}
+<div className="mt-20 bg-gradient-to-r from-white/5 to-purple-500/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+  <div className="text-center text-white mb-8">
+    <h3 className="text-2xl font-bold mb-2">Sudah Di Tonton Ribuan Kali!</h3>
+    <p className="text-gray-300">
+      E-book paling komprehensif tentang N8N automation di Indonesia
+    </p>
   </div>
-  <div>
-    <div className="text-3xl font-bold text-purple-400 mb-2">4.9/5</div>
-    <div className="text-sm text-gray-400">Rating</div>
-  </div>
-  <div>
-    <div className="text-3xl font-bold text-[#00ff88] mb-2">20+</div>
-    <div className="text-sm text-gray-400">Jam Video</div>
-  </div>
-  <div>
-    <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-    <div className="text-sm text-gray-400">Bisa Diakses Kapan Saja</div>
+
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+    <div>
+      <div className="text-3xl font-bold text-[#00ff88] mb-2">5,847+</div>
+      <div className="text-sm text-gray-400">Peserta Belajar</div>
+    </div>
+    <div>
+      <div className="text-3xl font-bold text-purple-400 mb-2">4.9/5</div>
+      <div className="text-sm text-gray-400">Rating</div>
+    </div>
+    <div>
+      <div className="text-3xl font-bold text-[#00ff88] mb-2">20+</div>
+      <div className="text-sm text-gray-400">Jam Video</div>
+    </div>
+    <div>
+      <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
+      <div className="text-sm text-gray-400">Bisa Diakses Kapan Saja</div>
+    </div>
   </div>
 </div>
 
-        </div>
       </div>
     </section>
   );

@@ -86,43 +86,54 @@ export default function WhyDifferent() {
         </div>
         
         {/* Comparison Table */}
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden mb-16">
-          <div className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white p-6">
-            <div className="grid grid-cols-3 gap-6 items-center">
-              <div></div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-red-400">Kursus Lain</h3>
-                <p className="text-sm text-gray-300">Teori & Membosankan</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-[#00ff88]">Jago N8N</h3>
-                <p className="text-sm text-gray-300">Praktik & Real Case</p>
-              </div>
-            </div>
-          </div>
-          
-          {comparisons.map((comparison, index) => (
-            <div key={index} className={`grid grid-cols-3 gap-6 p-6 items-center ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
-              <div className="font-semibold text-[#0f172a]">
-                {comparison.aspect}
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <X className="w-4 h-4 text-red-600" />
-                </div>
-                <p className="text-gray-600">{comparison.others}</p>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="w-4 h-4 text-[#00cc6a]" />
-                </div>
-                <p className="text-gray-600">{comparison.jagoN8N}</p>
-              </div>
-            </div>
-          ))}
+<div className="bg-white rounded-3xl shadow-xl overflow-hidden mb-16">
+  {/* Header */}
+  <div className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white p-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center">
+      <div className="hidden md:block"></div> {/* kosong biar rata */}
+      <div>
+        <h3 className="text-xl font-bold text-red-400">Kursus Lain</h3>
+        <p className="text-sm text-gray-300">Teori & Membosankan</p>
+      </div>
+      <div>
+        <h3 className="text-xl font-bold text-[#00ff88]">Jago N8N</h3>
+        <p className="text-sm text-gray-300">Praktik & Real Case</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Rows */}
+  {comparisons.map((comparison, index) => (
+    <div
+      key={index}
+      className={`grid grid-cols-1 md:grid-cols-3 gap-6 p-6 items-start ${
+        index % 2 === 0 ? "bg-gray-50" : "bg-white"
+      }`}
+    >
+      {/* Aspect */}
+      <div className="font-semibold text-[#0f172a] text-center md:text-left mb-4 md:mb-0">
+        {comparison.aspect}
+      </div>
+
+      {/* Others */}
+      <div className="flex items-start gap-3">
+        <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <X className="w-4 h-4 text-red-600" />
         </div>
+        <p className="text-gray-600">{comparison.others}</p>
+      </div>
+
+      {/* Jago N8N */}
+      <div className="flex items-start gap-3 mt-4 md:mt-0">
+        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+          <Check className="w-4 h-4 text-[#00cc6a]" />
+        </div>
+        <p className="text-gray-600">{comparison.jagoN8N}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
         
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

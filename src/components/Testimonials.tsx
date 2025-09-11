@@ -103,9 +103,7 @@ export default function Testimonials() {
             Testimoni & Bukti
             <span className="block text-[#00ff88]">Sosial</span>
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Ribuan profesional sudah transform karir mereka. Kamu yang selanjutnya?
-          </p>
+          
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

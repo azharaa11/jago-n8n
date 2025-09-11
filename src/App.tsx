@@ -5,7 +5,7 @@ import TargetAudience from "./components/TargetAudience";
 import WhyDifferent from "./components/WhyDifferent";
 import LearningRoadmap from "./components/LearningRoadmap";
 import EbookSection from "./components/EbookSection";
-import ExclusiveBonus from "./components/ExclusiveBonus";
+// import ExclusiveBonus from "./components/ExclusiveBonus";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
@@ -27,7 +27,7 @@ export default function App() {
       <WhyDifferent />
       <LearningRoadmap />
       <EbookSection />
-      <ExclusiveBonus />
+      {/* <ExclusiveBonus /> */}
       <Testimonials />
       <FAQ />
       <Pricing />

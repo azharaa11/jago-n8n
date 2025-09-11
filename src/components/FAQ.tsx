@@ -78,9 +78,6 @@ export default function FAQ() {
             Frequently Asked
             <span className="block text-[#00ff88]">Questions</span>
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Masih ada pertanyaan? Berikut jawaban untuk pertanyaan yang paling sering ditanyakan
-          </p>
         </div>
         
         <div className="max-w-4xl mx-auto">
