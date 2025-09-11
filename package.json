@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
+    "@vercel/static-build": "^2.7.23",
     "@vitejs/plugin-react": "^5.0.2",
     "@vitejs/plugin-react-swc": "^4.0.1",
     "vite": "^7.1.5"
