@@ -7,6 +7,7 @@ import LearningRoadmap from "./components/LearningRoadmap";
 import EbookSection from "./components/EbookSection";
 // import ExclusiveBonus from "./components/ExclusiveBonus";
 import Testimonials from "./components/Testimonials";
+// import VideoTutorialSection from "./components/EbookSection";
 import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
 import FinalCTA from "./components/FinalCTA";
@@ -26,6 +27,7 @@ export default function App() {
       <TargetAudience />
       <WhyDifferent />
       <LearningRoadmap />
+      {/* <VideoTutorialSection/> */}
       <EbookSection />
       {/* <ExclusiveBonus /> */}
       <Testimonials />
