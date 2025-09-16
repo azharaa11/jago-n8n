@@ -59,7 +59,8 @@
     "vite": "^7.1.5"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+  "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview --port $PORT --host"
   }
 }
