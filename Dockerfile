@@ -25,15 +25,10 @@ FROM caddy:2-alpine AS runner
 # Set working directory untuk Caddy
 WORKDIR /srv
 
-# Salin hasil build dari tahap builder
+# Copy hasil build dari tahap builder
 COPY --from=builder /app/dist /srv
 
-# Optional: set Caddy default config supaya serve index.html dan assets
-# Kalau pakai default Caddy image, ini sudah otomatis
-# Tapi kalau ingin custom:
-# COPY Caddyfile /etc/caddy/Caddyfile
+# Copy konfigurasi Caddy custom
+COPY Caddyfile /etc/caddy/Caddyfile
 
-# Expose port
 EXPOSE 80
-
-# Container akan otomatis jalankan Caddy
