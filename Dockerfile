@@ -1,28 +1,28 @@
-# Step 1: build app
+# Step 1: Build app dengan Node.js 22.16
 FROM node:22.16 AS builder
 
 WORKDIR /app
 
-# copy package.json + lockfile dulu biar cache aman
+# Copy package.json + lockfile dulu
 COPY package*.json ./
 
 RUN npm ci
 
-# copy semua source code
+# Copy semua source
 COPY . .
 
-# build vite
+# Build Vite
 RUN npm run build
 
-# Step 2: serve built app pakai caddy
+# Step 2: Serve static file pakai Caddy
 FROM caddy:2-alpine AS runner
 
 WORKDIR /srv
 
-# copy hasil build
+# Copy hasil build dari builder
 COPY --from=builder /app/dist /srv
 
-# expose port 80
+# Expose port 80
 EXPOSE 80
 
-# caddy otomatis serve /srv
+# Caddy otomatis serve folder /srv
