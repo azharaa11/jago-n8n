@@ -59,8 +59,8 @@
     "vite": "^7.1.5"
   },
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "start": "vite preview --port $PORT --host"
-  }
+  "dev": "npx vite",
+  "build": "npx vite build",
+  "start": "npx vite preview --port $PORT --host"
+}
 }
