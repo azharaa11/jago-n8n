@@ -1,6 +1,9 @@
 [phases.build]
-cmds = ["npm ci --include=dev", "npm run build"]
-
+cmds = [
+  "npm ci --include=dev",
+  "chmod +x node_modules/.bin/vite",
+  "npm run build"
+]
 [start]
 cmd = "npm run start"
 
