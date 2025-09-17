@@ -166,27 +166,48 @@ export default function HeroSection() {
             </motion.div>
             
             <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-[#00ff88] via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Jago N8N
-                </span>
-                <span className="block text-white mt-4">
-                Kursus 
-                </span>
-                <span className="block lg:text-6xl text-gray-300 mt-2">
-                Interaktif
-                </span>
-              </h1>
-              
-              <p className="text-xl lg:text-xl text-gray-300 leading-relaxed max-w-2xl">
-               Modul lengkap dan terstruktur untuk menguasai N8N, Cocok untuk pemula maupun profesional.
-              </p>
-            </motion.div>
+  // Hapus 'space-y-6' dari sini
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.3 }}
+>
+  {/* Ini mengatur jarak antara logo dan teks */}
+  <div className="flex items-center gap-4">
+    <motion.img 
+      src="/logo.png"
+      alt="Logo" 
+      className="w-16 h-16 sm:w-20 sm:h-20 object-contain opacity-90"
+      animate={{
+        rotate: [0, 5, -5, 0],
+        scale: [1, 1.05, 1]
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }}
+    />
+    <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+      <span className="bg-gradient-to-r from-[#00ff88] via-blue-400 to-purple-400 bg-clip-text text-transparent">
+        Jago N8N
+      </span>
+    </h1>
+  </div>
+  
+  {/* Jarak ini tetap seperti yang Anda inginkan */}
+  <span className="block text-white mt-4 text-5xl lg:text-7xl font-bold leading-tight">
+    Kursus 
+  </span>
+  
+  {/* Jarak ini tetap seperti yang Anda inginkan */}
+  <span className="block lg:text-6xl text-gray-300 mt-2 text-5xl lg:text-7xl font-bold leading-tight">
+    Interaktif
+  </span>
+  
+  <p className="text-xl lg:text-xl text-gray-300 leading-relaxed max-w-2xl">
+    Modul lengkap dan terstruktur untuk menguasai N8N, Cocok untuk pemula maupun profesional.
+  </p>
+</motion.div>
             
             {/* Stats */}
            <motion.div
