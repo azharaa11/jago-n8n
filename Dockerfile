@@ -1,25 +1,28 @@
-# Step 1: Build app
+# Step 1: build app
 FROM node:22.16 AS builder
 
 WORKDIR /app
 
+# copy package.json + lockfile dulu
 COPY package*.json ./
 
 RUN npm ci
 
+# copy semua source code
 COPY . .
 
-# Pastikan vite bisa dieksekusi
-RUN chmod +x node_modules/.bin/vite
-
+# build vite
 RUN npm run build
 
-
-# Step 2: Serve build hasilnya pakai Caddy
+# Step 2: serve built app pakai caddy
 FROM caddy:2-alpine AS runner
 
-WORKDIR /srv
+# hapus default index bawaan Caddy
+RUN rm -rf /usr/share/caddy/*
 
-COPY --from=builder /app/dist /srv
+# copy hasil build ke folder yg benar
+COPY --from=builder /app/dist /usr/share/caddy
 
 EXPOSE 80
+
+# Caddy otomatis serve /usr/share/caddy
