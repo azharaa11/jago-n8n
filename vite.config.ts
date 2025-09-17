@@ -12,8 +12,9 @@ export default defineConfig({
   server: {
     port: 3000
   },
+  base: '/',   // supaya asset path bener saat di-deploy
   build: {
-    outDir: 'dist',
-    base: '/'  // wajib untuk deployment Coolify
+    target: 'esnext',
+    outDir: 'dist'
   }
 });
