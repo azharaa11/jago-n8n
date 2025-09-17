@@ -1,16 +1,28 @@
-# Step 1: Build dengan Node 22.16
+# Step 1: build app
 FROM node:22.16 AS builder
+
 WORKDIR /app
 
+# copy package.json + lockfile dulu biar cache aman
 COPY package*.json ./
+
 RUN npm ci
 
+# copy semua source code
 COPY . .
-RUN npx vite build
 
-# Step 2: Serve hasil build dengan nginx
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
+# build vite
+RUN npm run build
 
+# Step 2: serve built app pakai caddy
+FROM caddy:2-alpine AS runner
+
+WORKDIR /srv
+
+# copy hasil build
+COPY --from=builder /app/dist /srv
+
+# expose port 80
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+# caddy otomatis serve /srv
