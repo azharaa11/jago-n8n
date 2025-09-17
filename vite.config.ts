@@ -14,6 +14,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'dist' // gunakan default dist supaya Vercel mengenali folder statis
+    outDir: 'dist',   // tetap pakai 'dist'
+    base: '/'         // **tambah ini supaya Caddy bisa serve file**
   }
 });
