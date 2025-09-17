@@ -166,13 +166,12 @@ export default function HeroSection() {
             </motion.div>
             
             <motion.div
-  // Hapus 'space-y-6' dari sini
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, delay: 0.3 }}
 >
-  {/* Ini mengatur jarak antara logo dan teks */}
-  <div className="flex items-center gap-4">
+  {/* Perubahan di sini: Tambahkan `flex-nowrap` */}
+  <div className="flex items-center gap-4 flex-nowrap">
     <motion.img 
       src="/logo.png"
       alt="Logo" 
@@ -194,12 +193,10 @@ export default function HeroSection() {
     </h1>
   </div>
   
-  {/* Jarak ini tetap seperti yang Anda inginkan */}
   <span className="block text-white mt-4 text-5xl lg:text-7xl font-bold leading-tight">
     Kursus 
   </span>
   
-  {/* Jarak ini tetap seperti yang Anda inginkan */}
   <span className="block lg:text-6xl text-gray-300 mt-2 text-5xl lg:text-7xl font-bold leading-tight">
     Interaktif
   </span>
@@ -284,7 +281,7 @@ export default function HeroSection() {
                 </Button>
               </motion.div>
               
-             <motion.div
+              <motion.div
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
 >
