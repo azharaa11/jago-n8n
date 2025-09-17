@@ -13,8 +13,7 @@ export default defineConfig({
     port: 3000
   },
   build: {
-    target: 'esnext',
-    outDir: 'dist',   // tetap pakai 'dist'
-    base: '/'         // **tambah ini supaya Caddy bisa serve file**
+    outDir: 'dist',
+    base: '/'  // wajib untuk deployment Coolify
   }
 });
