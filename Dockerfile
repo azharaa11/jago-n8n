@@ -1,21 +1,22 @@
-# Step 1: build app pakai Node.js 20 (sesuai package.json)
-FROM node:20-alpine AS builder
+# Step 1: Build app
+FROM node:22.16 AS builder
 
 WORKDIR /app
 
-# Copy package.json + lockfile biar cache aman
+# Copy package.json + lockfile dulu supaya cache efektif
 COPY package*.json ./
 
-# Install dependency (bersih sesuai lockfile)
+# Install dependencies (include dev untuk build)
 RUN npm ci
 
 # Copy semua source code
 COPY . .
 
-# Build Vite pakai npx biar pasti ketemu bin-nya
-RUN npx vite build
+# Build vite (pakai script di package.json)
+RUN npm run build
 
-# Step 2: serve built app pakai Caddy
+
+# Step 2: Serve build hasilnya pakai Caddy
 FROM caddy:2-alpine AS runner
 
 WORKDIR /srv
@@ -23,7 +24,7 @@ WORKDIR /srv
 # Copy hasil build dari builder
 COPY --from=builder /app/dist /srv
 
-# Expose port 80 (Caddy serve otomatis isi folder /srv)
+# Expose port 80 (Caddy default)
 EXPOSE 80
 
-# Command default Caddy udah otomatis serve /srvggit
+# Caddy otomatis serve isi /srv
