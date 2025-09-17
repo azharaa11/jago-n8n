@@ -1,12 +1,14 @@
+[phases.setup]
+nixPkgs = ["nodejs_22", "npm-10_x"]
+
 [phases.build]
 cmds = [
-  "npm ci --include=dev",
-  "chmod +x node_modules/.bin/vite",
-  "npm run build"
+  "npm ci --omit=dev", # install dependencies production + dev kalau dibutuhkan
+  "npx vite build"
 ]
 
 [start]
-cmd = "npm run start"
+cmd = "npx vite preview --port $PORT --host"
 
 [variables]
 NIXPACKS_SPA = "1"
