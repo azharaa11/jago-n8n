@@ -1,5 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm-9_x"]
+
 [phases.build]
-cmds = ["npm ci --include=dev", "npm run build"]
+cmds = [
+  "npm ci",
+  "npm run build"
+]
 
 [start]
 cmd = "npm run start"
@@ -7,4 +13,3 @@ cmd = "npm run start"
 [variables]
 NIXPACKS_SPA = "1"
 NIXPACKS_SPA_OUTPUT_DIR = "dist"
-NIXPACKS_NODE_VERSION = "20.19.0"
