@@ -16,11 +16,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Top margin untuk estetika yang lebih baik */}
-      <div className="pt-6 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      
           <HeroSection />
-        </div>
-      </div>
+        
       
       <ProblemAwareness />
       <RealityCheck />

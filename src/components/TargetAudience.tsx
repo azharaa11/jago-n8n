@@ -108,29 +108,29 @@ export default function TargetAudience() {
           ))}
         </div>
         
-        <div className="mt-16 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-3xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">
-            Kamu Termasuk Salah Satunya?
-          </h3>
-          <p className="text-lg text-gray-300 mb-6">
-            Gabung dengan 1000+ learners yang sudah transform karir mereka dengan automation
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-[#00ff88]">87%</div>
-              <div className="text-sm text-gray-400">Naik Gaji/Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-[#00ff88]">92%</div>
-              <div className="text-sm text-gray-400">Hemat Waktu 5+ Jam/Hari</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-[#00ff88]">95%</div>
-              <div className="text-sm text-gray-400">Lebih Produktif</div>
-            </div>
-          </div>
-        </div>
+        <div className="mt-12 bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-2xl p-6 text-white text-center">
+          <h3 className="text-xl font-bold mb-3">
+            Kamu Termasuk Salah Satunya?
+          </h3>
+          <p className="text-md text-gray-300 mb-5 max-w-lg mx-auto">
+            Gabung dengan 1000+ learners yang sudah transform karir mereka dengan automation
+          </p>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-[#00ff88]">87%</div>
+              <div className="text-xs text-gray-400">Naik Gaji/Rate</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-[#00ff88]">92%</div>
+              <div className="text-xs text-gray-400">Hemat Waktu 5+ Jam/Hari</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-[#00ff88]">95%</div>
+              <div className="text-xs text-gray-400">Lebih Produktif</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
